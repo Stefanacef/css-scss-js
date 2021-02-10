@@ -16,6 +16,7 @@ html {
 
 .flip{
   height: 100vh;
+  perspective: 100rem;
   
 }
 .flip-card{
@@ -25,7 +26,6 @@ html {
   position: relative;
   transition: all 5s;
   transform-style: preserve-3d;
-  perspective: 100rem;
   cursor: pointer;
   
 
