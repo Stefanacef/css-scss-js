@@ -1,1 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    /*
+      16 pixeli=100%
+      10%=62.5% 
+      1rem=10px */
+    font-size: 62.5%;
+  }
+  body{
+      box-sizing: border-box;
+      position: relative;
+  }
 
+.flip{
+  height: 100vh;
+  perspective: 100rem;
+  
+}
+.flip-card{
+  width: 32rem;
+  height: 40rem;
+  margin: 20rem auto;
+  position: relative;
+  transition: all 5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  
+
+  
+
+}
+.flip-card__front, .flip-card__back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5rem;
+
+}
+.flip-card__front{
+ 
+  background-color: rgb(167, 167, 92);
+}
+.flip-card__back{
+  background-color: rgb(145, 93, 93);
+}
+
+
+.flip-card:hover, .flip-card__front{
+  transform: rotateY(180deg);
+}
+.emoji{
+  background-image: linear-gradient(to right bottom, #09015f, #af0069, #55b3b1, #f6c065);
+  font-size: 10rem;
+  position: absolute;
+  top: 20rem;
+  left:16rem;
+  -webkit-background-clip:text;
+  color:transparent;
+  background-clip: text;
+  transform: translate(-50%, -50%);
+}
+
+/* 😁for help */
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+/* https://3dtransforms.desandro.com/card-flip */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style */
+/* https://fontawesome.com/icons/smile-wink?style=solid */
+/* https://colorhunt.co/ */
