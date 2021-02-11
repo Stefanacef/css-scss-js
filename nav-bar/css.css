@@ -144,6 +144,62 @@ a:hover{
   font-size: 2.3rem;
   left: 7rem;
 }
+
+
+
+}
+@media only screen and (max-width: 480px){
+  .nav>*{
+    font-size: 1rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+  height: 100vh; 
+  width: 30%;
+}
+.logo-prim{
+  font-size: 2rem;
+}
+.logo-span{
+ font-size: 1.3rem;
+  
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+.logo-prim:hover .logo-span{
+  transform: translateY(.6rem);
+  
+}
+.content{
+  top:5rem;
+  font-size:1.5rem;
+}
+.search{
+  left:-.8rem;
+  top:12rem;
+  
+}
+.input{
+  width: 6rem;
+
+}
+
+.icon{
+  top:.7rem;
+  font-size: 2rem;
+  left: 5rem;
+}
+
+}
+@media only screen and (max-width: 400px){
+  
+  .wrapper{
+  background:transparent;
+} 
 }
 
 
