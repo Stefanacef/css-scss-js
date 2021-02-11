@@ -99,6 +99,52 @@ a:hover{
 .icon:active{
   transform: scale(1.1);
 }
+@media only screen and (max-width: 800px){
+  .nav>*{
+    font-size: 2rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+  height: 100vh; 
+  width: 20%;
+}
+.logo-prim{
+  font-size: 2.5rem;
+}
+.logo-span{
+ font-size: 1.7rem;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+.logo-prim:hover .logo-span{
+  transform: translateY(.65rem);
+}
+.content{
+  left: .1rem;
+  width: 20rem;
+  top:5rem;  
+  text-align: left;
+}
+.search{
+  left:-.8rem;
+  top:16rem;
+  
+}
+.input{
+  width: 9rem;
+
+}
+
+.icon{
+  top:.7rem;
+  font-size: 2.3rem;
+  left: 7rem;
+}
+}
 
 
 
@@ -113,3 +159,5 @@ a:hover{
 /* https://www.w3schools.com/cssref/sel_placeholder.asp */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator */
 /* https://stackoverflow.com/questions/2094508/is-there-a-css-selector-for-the-first-direct-child-only */
+/* https://www.w3schools.com/cssref/sel_active.asp */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
