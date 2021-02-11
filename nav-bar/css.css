@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* 
+      16 pixeli=100%
+      10%=62.5% */
+    font-size: 62.5%;
+  }
+  body{
+      box-sizing: border-box;
+      position: relative;
+      background-color: #8d6262; 
+  }
+  .wrapper{
+    background-color: rgb(161, 161, 161, .4);
+    height: 5rem; 
+  }
+  .nav{
+      margin: 0 auto;
+      width: 80%;
+      position: relative;
+  }
+.nav>*{
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+/* ----- */
+a:link,
+a:visited{
+text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+
+.logo-prim{
+  color: #393232;
+  font-size: 3rem;
+}
+.logo-span{
+ color: #eff7e1;
+ font-size: 2rem;
+}
+.logo-prim:hover .logo-span{
+  transform: translateY(.9rem);
+}
+ 
+.content{
+    left: 15rem;
+    width: 20rem;
+    top:1.9rem;  
+}
+.content>*{
+  color: #393e46;
+}
+
+/* ----- */
+.search{
+    right: 0;
+    top:1.5rem;
+    
+}
+.input{
+  margin-right: 1.5rem;
+  border: none;
+  border-radius: 5rem;
+  padding: .6rem .5rem .5rem .9rem;
+  background-color:rgb(57,62,70, .5);
+  
+}
+.input::-webkit-input-placeholder{
+  color:rgb(238,238,238,.5);
+}
+.input:focus:invalid{
+  border-bottom: .3rem solid red ;
+}
+.input:focus{
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(57,62,70, .1);
+  border-bottom: .3rem solid rgb(238,238,238,.5);
+}
+.icon{
+  font-size: 2rem;
+  color:rgb(238,238,238,.5) ;
+  position: relative;
+  top:.4rem;
+  font-size: 2.3rem;
+}
+.icon:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.icon:active{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* for help 😁 */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://css-tricks.com/almanac/selectors/i/invalid/ */
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+/* https://www.w3schools.com/cssref/sel_placeholder.asp */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator */
+/* https://stackoverflow.com/questions/2094508/is-there-a-css-selector-for-the-first-direct-child-only */
