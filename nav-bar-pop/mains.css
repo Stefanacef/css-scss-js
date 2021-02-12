@@ -1,1 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  /* 
+      16 pixeli=100%
+      10%=62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background-color: #faf3e0;
+}
+
+.wrapper {
+  margin-left: 5rem;
+}
+
+.span {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  text-decoration: none;
+  color: #1e212d;
+}
+
+.navigation__logo {
+  position: absolute;
+  font-size: 3.5rem;
+  left: 2rem;
+  top: 1rem;
+}
+
+.navigation__logo:hover .span-1 {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.navigation__logo:hover .span-2 {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+
+.navigation__logo:hover .span-3 {
+  -webkit-transform: translateX(0.4rem);
+          transform: translateX(0.4rem);
+}
+
+.navigation__icon {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  font-size: 3rem;
+  color: rgba(30, 33, 45, 0.7);
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.navigation__icon:hover {
+  cursor: pointer;
+}
+
+.navigation__nav {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navigation__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.navigation__li {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #eabf9f 50%);
+  background-size: 220%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navigation__li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.navigation__li:hover {
+  background-position: 100%;
+}
+
+.navigation__checkbox {
+  visibility: hidden;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  -webkit-animation: trans .3s ease-in;
+          animation: trans .3s ease-in;
+  visibility: inherit;
+  opacity: 1;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  -webkit-transform: translateX(3rem) rotate(90deg);
+          transform: translateX(3rem) rotate(90deg);
+}
+
+@-webkit-keyframes trans {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes trans {
+  0% {
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+//    for help😁
+// https://colorhunt.co/
+// https://fontawesome.com/
+// https://www.w3schools.com/cssref/pr_background-position.asp
+// https://www.w3schools.com/cssref/css3_pr_background-size.asp
+// https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+// https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+// https://developer.mozilla.org/en-US/docs/Web/CSS/:not
+// https://www.w3schools.com/cssref/sel_last-child.asp
