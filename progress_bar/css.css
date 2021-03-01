@@ -33,7 +33,6 @@ body{
 
 }
 .progress-container::before{
-    /* cand folosesti pseudo clase nu uita de content!! */
     content:'';
     background-color:var(--cularea-grii);
     position: absolute;
@@ -92,3 +91,9 @@ transform: translateY(-50%);
 .circle.activ{
     border:3px solid purple;
 }
+
+/* https://www.w3schools.com/cssref/sel_before.asp
+https://www.w3schools.com/cssref/sel_disabled.asp
+https://www.w3schools.com/cssref/sel_focus.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+ */
