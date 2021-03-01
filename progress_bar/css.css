@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+
+
+:root{
+--gradient:linear-gradient(to left,#ffba93,#a685e2, #9f5f80);
+--cularea-grii:#d4e2d4;
+
+
+}
+*{
+   box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    margin: 0;
+    
+}
+.container{
+    text-align: center;
+}
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+
+}
+.progress-container::before{
+    /* cand folosesti pseudo clase nu uita de content!! */
+    content:'';
+    background-color:var(--cularea-grii);
+    position: absolute;
+    left:0;
+    top:50%;
+    height: 4px;
+    max-width: 100%;
+    width: 100%;
+    z-index: -1;
+    /* o pozitioneaza efectiv la mijoc!!! */
+    transform: translateY(-50%);
+    }
+
+.progres{
+background-image:var(--gradient) ;
+position: absolute;
+left:0;
+top:50%;
+height: 4px;
+max-width: 100%;
+width: 0%;
+z-index: -1;
+transition: 0.2s ease;
+/* o pozitioneaza efectiv la mijoc!!! */
+transform: translateY(-50%);
+}
+.btn{
+    background-image:var(--gradient);
+    color:var(--cularea-grii);
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin-left: 10px;
+
+}
+.btn:disabled{
+ background-image: var(--cularea-grii);
+ color:#c9cbff
+}
+.btn.activ{
+ transform: scale(0.98);
+}
+.btn:focus{
+ outline: 0;
+}
+.circle{
+    background-color: azure;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid var(--cularea-grii);
+    transform: 0.4 ease;
+}
+.circle.activ{
+    border:3px solid purple;
+}
