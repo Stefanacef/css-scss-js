@@ -108,7 +108,7 @@ a:hover{
 }
 .wrapper{
   height: 100vh; 
-  width: 20%;
+  width: 15rem;
 }
 .logo-prim{
   font-size: 2.5rem;
@@ -118,7 +118,8 @@ a:hover{
 }
 .logo{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  
 }
 .logo-prim:hover .logo-span{
   transform: translateY(.65rem);
@@ -140,9 +141,16 @@ a:hover{
 }
 
 .icon{
-  top:.7rem;
+  top:-2.3rem;
   font-size: 2.3rem;
-  left: 7rem;
+  left: 11.5rem;
+}
+  .icon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+  .icon:active{
+  transform: scale(1);
 }
 
 
@@ -189,9 +197,10 @@ a:hover{
 }
 
 .icon{
-  top:.7rem;
+  top:-2.1rem; 
   font-size: 2rem;
-  left: 5rem;
+  left: 9rem;
+
 }
 
 }
