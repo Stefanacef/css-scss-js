@@ -15,7 +15,8 @@ body{
     display:flex;
     width: 90vw;
 }
-.panel
+.panel{
+   
     background-position: center;
     background-size: auto 150%;
     background-repeat: no-repeat;
