@@ -1,34 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+'use strict'
+let panel=document.querySelectorAll('.panel');
+console.log(panel);//node list!!
 
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-   
-    <div class="container">
-     <div class="panel  panel__1 activ ">
-      <h3><strong>LearnnCSS </strong></h3>
-     </div>
-     <div class="panel panel__2">
-      <h3><strong>LearnnCSS</strong></h3>
-     </div>
-     <div class="panel  panel__3">
-       <h3><strong>LearnnCSS</strong></h3>
-     </div>
-     <div class="panel panel__4  ">
-       <h3><strong>LearnnCSS</strong></h3>
-     </div>
-     <div class="panel panel__5 ">
-      <h3><strong>LearnnCSS</strong></h3>
-     </div>
-  
-    </div>
+panel.forEach(pan => {//cand ai .ai multe elemete, care  iti returneaza node list, care se trateaza ca si array
+    pan.addEventListener('click',function(){
+     stergeActiv()
+     pan.classList.add('activ');
+     console.log(pan.classList)
+    })
 
-
-<script src="index.js"></script>
-</body>
-</html>
+});
+const stergeActiv=function(){
+  panel.forEach(pan=>pan.classList.remove('activ'))//am uitat class list !!!! mama lui de clas list !!!
+}
