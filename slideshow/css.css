@@ -13,24 +13,17 @@ body{
 }
 .container{
     display:flex;
-    /* 90 din dimendiunea ecranului */
     width: 90vw;
 }
-.panel{
-    /* pozitioneaza imaginea in centru */
+.panel
     background-position: center;
-    /* trebuie sa vedem, deci seteaza marimea dar acel 100? */
     background-size: auto 150%;
-    /* da in acest panel, sa se repete imaginea, am spus ca nu */
     background-repeat: no-repeat;
-    /* 90 din ecanul pe care sunt afisate */
     height: 90vh;
-    /* flex, dimensiunea lui */
     flex: 0.2;
     margin:10px;
     border-radius: 50px;
     position: relative;
-    /* am pus efectl de trantietie in momentul 0, pe flex!! */
     transition: flex 0.2s ease-in;
  
     
@@ -77,3 +70,9 @@ background-image: linear-gradient(to right, #5433FF,#20BDFF,#A5FECB);
     }
 
 }
+
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/cssref/pr_background-repeat.asp
+*/
