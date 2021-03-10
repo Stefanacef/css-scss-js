@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  
+  html {
+    /* 
+        16 pix=100%
+        10%=62.5% */
+    font-size: 62.5%;
+  }
+  :root{
+    --color-primary: #26001b;
+    --color-secondary: gray;
+  }
+body{
+    box-sizing: border-box;
+    background: url('https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=757&q=80');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+.btn--pop{
+    position: absolute;
+    top: 30rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 3rem;
+    color:var(--color-primary) ;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255, .5);
+    border:1px solid var(--color-secondary);
+    
+
+}
+.btn--pop:hover{
+  cursor: pointer;
+ }
+ .btn--pop:focus{
+     transform: scale(.9);
+     outline: none;
+ }
+.container{
+    height: 50rem;
+    width: 50rem;
+    background-color:rgba(255, 255, 255, .2);
+    border: solid 2px rgb(255, 255, 255, .4);
+    background-clip: padding-box;
+    box-shadow: 1rem 1rem 1rem rgba(46, 54, 68, .03);
+    border-radius: 1rem;
+    margin-top: 10rem;
+    transition: all .3s;
+    position: relative;
+    
+
+    
+    
+}
+.none{
+    display: none;
+}
+
+h1{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 4rem;
+    color: var(--color-primary);
+}
+.icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    color:var(--color-primary);
+}
+.icon:hover{
+    cursor: pointer;
+}
+.form{
+   display:grid;
+   grid-template-columns: 1.5fr 2fr;
+   gap:.8rem;
+   margin: 8rem 2rem;
+   padding-left: 4rem;
+   position: relative;
+  
+    
+}
+.inp{
+    height: 3rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255, .4);
+    border:1px solid var(--color-secondary);
+    padding-left: 1rem;
+    
+}
+.inp:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255, .4);
+    border:1px solid var(--color-secondary);
+}
+
+.lab{
+    font-size: 2.7rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    
+    
+    
+   
+}
+
+.btn-ok{
+
+    border-radius: 1.5rem;
+    height: 3.5rem;
+    width: 15rem;
+    transform: translate(12rem, 2.3rem);
+    background-color: rgb(255, 255, 255, .5);
+    border:1px solid var(--color-secondary);
+    font-size: 2rem;
+    color:var(--color-primary);
+    font-weight: 700;
+    
+}
+.btn-ok:focus{
+    outline: none;
+    transform: translate(12rem, 2.3rem) scale(.9);
+   
+}
