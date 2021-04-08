@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.section--1,.section--2{
+    height: 100vh;
+    text-align: center;
+}
+.section--1{
+    position: relative;
+    background-color: lightcoral;
+}
+.section--2{
+    background-color: rgb(230, 230, 75);
+}
+
+.section--1 > button{
+    position: absolute;
+    margin: 200px auto;
+    width: 200px;
+    height: 50px;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(238, 40, 132);
+    border: none;
+
+}
+
+.btn:focus{
+    outline: none;
+    
+}
+/*  
+https://css-tricks.com/snippets/jquery/smooth-scrolling/
+https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+*/
