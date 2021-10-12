@@ -1,84 +1,84 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: gray;
 }
 
 h2 {
-    position: absolute;
-    margin-top: -50px;
-    margin-left: 55px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 55px;
 
-    color: #3f3f3f;
+  color: #3f3f3f;
 }
 
 form {
-    display: inline-flex;
-    flex-direction: column;
-    padding: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 30px;
 
-    background: rgba(227, 237, 246, 0.86);
-    border-radius: 20px;
+  background-color: whitesmoke;
+  border-radius: 20px;
 }
 
 form > * {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 label {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
 
 button {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
-    width: 120px;
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  width: 120px;
 
-    border-radius: 12px;
-    border: 1px solid rgb(203, 174, 241);
+  border-radius: 12px;
+  border: 1px solid rgb(203, 174, 241);
 
-    background: rgb(213, 209, 246);
-    color: #444444;
+  background: rgb(213, 209, 246);
+  color: #444444;
 }
 
 button:hover {
-    background: #b890f5;
-    transition-duration: 0.6s;
+  background: #b890f5;
+  transition-duration: 0.6s;
 }
 
 section {
-    margin: 50px;
+  margin: 50px;
 }
 
 .field {
-    padding: 10px;
-    border-radius: 7px;
-    border: 1px solid rgba(189, 189, 189, 0.82);
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(189, 189, 189, 0.82);
 }
 
 .containerCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .commCard {
-    margin: 10px 0;
-    list-style: none;
+  margin: 10px 0;
+  list-style: none;
 
-    border: 1px solid #989898;
-    padding: 20px;
-    background: rgba(227, 237, 246, 0.86);
-    border-radius: 20px;
+  border: 1px solid #989898;
+  padding: 20px;
+  background: rgba(227, 237, 246, 0.86);
+  border-radius: 20px;
 }
 
